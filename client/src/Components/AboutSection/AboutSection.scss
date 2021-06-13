@@ -1,0 +1,151 @@
+@use "../../Styles/partials/fonts" as *;
+@use "../../Styles/partials/mixins" as *;
+@use "../../Styles/partials/variables" as *;
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+
+    &__title {
+        text-align: center;
+        
+        @include tablet {
+            padding: 1rem 0rem 1rem;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 215px;
+        border-radius: 50%;
+        height: 200px;
+        margin: 0% 0% 8%;
+
+        @include desktop {
+            width: 260px;
+            height: 240px;
+        }
+    }
+
+    &__details-subContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0rem 1rem 0rem;
+
+        @include tablet {
+            width: 80%;
+            margin: 0% 10% 0%;
+            padding: 0;
+        }
+    }
+
+    &__details-subContainer:nth-last-child(1) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-self: center;
+        box-sizing: border-box;
+        width: 90%;
+        padding: 1rem 0rem 0.5rem;
+        margin: 5%;
+        border: 4px dotted $black;
+
+        @include tablet {
+            padding: 1rem 0rem 0.5rem;
+            margin: 2% 5% 5%;
+        }
+    }
+
+    &__details-title {
+        width: 100%;
+        text-align: center;
+        margin: 2% 0% 5%;
+
+        @include tablet {
+            margin: 2% 0% 2%;
+        }
+
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
+
+    &__details-list {
+        margin: 0%
+    }
+
+    &__details-listItem {
+        margin: 2% 0% 8%;
+
+        @include desktop {
+            margin: 2% 0% 2%;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__favorites-container {
+        width: 80%;
+
+        @include xl-desktop {
+            width: 100%;
+        }
+    }
+
+    &__favorites-subContainer {
+        display: flex;
+    }
+
+    &__favorites-grid {
+        padding: 0rem 0.25rem 0rem;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            flex-wrap: wrap;
+        }
+
+        @include xl-desktop {
+            width: 50%;
+            padding: 0rem 3rem 0rem;
+        }
+    }
+
+    &__favorites-title {
+        @include desktop {
+            margin: 0%;
+        }
+    }
+
+    &__favorites {
+        font-size: 1.2rem;
+    }
+
+    &__details {
+        @include desktop {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__details--quote {
+        font-style: italic;
+        font-weight: 500;
+    }
+}
+
+span {
+    font-weight: bold;
+}
