@@ -1,0 +1,183 @@
+@use "../../Styles/partials/fonts" as *;
+@use "../../Styles/partials/mixins" as *;
+@use "../../Styles/partials/variables" as *;
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Styling for Burger Menu -- since an external package and import, left in non-BEM format */
+
+.bm-burger-bars {
+  background: $black;
+}
+
+.bm-burger-button {
+  position: relative;
+  width: 25px;
+  height: 20px;
+  left: -15px;
+  right: 0px;
+  top: 25px;
+}
+
+.bm-cross {
+  background: white;
+}
+
+.bm-cross-button {
+  position: relative;
+  width: 0px;
+  height: 20px;
+}
+
+.bm-menu {
+  background: rgba(0,0,0, 0.7);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow: hidden;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+/* Styling for Mobile Header (and Tablet) */
+
+.header-mobile {
+  display: flex;
+  width: 100%;
+  padding: 0rem;
+  justify-content: space-between;
+  background-color: $white;
+
+  @include desktop {
+    display: none;
+  }
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__list {
+    width: 10%;
+  }
+
+  &__list-item {
+    color: $white;
+    margin: 0%;
+    font-family: $Montserrat;
+    font-weight: 700;
+  }
+}
+
+/* Styling for Desktop Header */
+
+.header-desktop {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+  }
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+
+    @include desktop {
+      padding: 0.5rem 0rem 0rem 1rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 30%;
+
+    @include xl-desktop {
+      width: 25%;
+    }
+  }
+
+  &__list {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 80%;
+
+    @include desktop {
+      padding: 0rem;
+    }
+  }
+
+  &__list-item {
+    color: $black;
+    font-family: $Montserrat;
+    font-weight: 700;
+  }
+
+  &__button-container {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    width: 45%;
+    padding: 0rem 1rem 0rem 0rem;
+
+    @include desktop {
+      width: 60%;
+    }
+
+    @include xl-desktop {
+      width: 56%;
+    }
+  }
+
+  &__button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-family: $Montserrat;
+    font-weight: 700;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: $white;
+
+    @include desktop {
+      width: 120px;
+    }
+  }
+
+  &__button--active {
+    display: flex;
+    background-color: $palette1;
+    border: none;
+    font-family: $Montserrat;
+    font-weight: 700;
+    width: 150px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: $white;
+
+    @include desktop {
+      width: 120px;
+    }
+  }
+}
