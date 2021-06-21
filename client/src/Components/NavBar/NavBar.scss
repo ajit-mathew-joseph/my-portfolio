@@ -73,6 +73,10 @@ ul {
     font-family: $Montserrat;
     font-weight: 700;
   }
+
+  &__link {
+    text-decoration: none;
+  }
 }
 
 /* Styling for Desktop Header */
@@ -179,5 +183,9 @@ ul {
     @include desktop {
       width: 120px;
     }
+  }
+
+  &__link {
+    text-decoration: none;
   }
 }

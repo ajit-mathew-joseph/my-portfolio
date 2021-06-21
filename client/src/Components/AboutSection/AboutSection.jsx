@@ -5,7 +5,7 @@ import "./AboutSection.scss";
 function AboutSection(props) {
   return (
     <div className="about">
-      <h2 className="about__title">About Me</h2>
+      <h2 className="about__title" id="about_me">About Me</h2>
       <div className="about__image-container">
         <img
           className="about__image"

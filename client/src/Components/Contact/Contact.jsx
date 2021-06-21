@@ -29,7 +29,7 @@ class Contact extends Component {
   render() {
     return (
       <form className="contact" onSubmit={(e) => this.mailHandler(e)}>
-        <h2 className="contact__title">Contact Me</h2>
+        <h2 className="contact__title" id="contact_me">Contact Me</h2>
 
         <div className="contact__input-container">
           <label htmlFor="nameInput" className="contact__label">
