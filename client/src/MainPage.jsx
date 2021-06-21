@@ -8,15 +8,12 @@ import React from "react";
 
 export default function MainPage() {
   return (
-    <div>
-      <div className="mainPage">
-        <HeroSection />
-        <AboutSection />
-        <WhyHireMe />
-        <ProjectsSection />
-        <Contact />
-      </div>
-      ;
+    <div className="mainPage">
+      <HeroSection />
+      <AboutSection />
+      <WhyHireMe />
+      <ProjectsSection />
+      <Contact />
     </div>
   );
 }

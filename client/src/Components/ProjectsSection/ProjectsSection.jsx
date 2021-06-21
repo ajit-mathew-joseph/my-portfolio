@@ -7,7 +7,7 @@ import brainFlix from "../../Assets/Images/brainflixImage.png";
 function ProjectsSection(props) {
   return (
     <div className="projects">
-      <h2 className="projects__main-title" id="my_projects">PROJECT SHOWCASE</h2>
+      <h2 className="projects__main-title">PROJECT SHOWCASE</h2>
       <div className="projects__showcase">
         <div className="projects__container">
           <img className="projects__logo" src={ybLogo} alt="project logo" />
