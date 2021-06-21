@@ -10,11 +10,6 @@ function WhyHireMe(props) {
       <h2 className="whyHireMe__main-title">WHY HIRE ME?</h2>
       <div className="whyHireMe__container">
         <div className="whyHireMe__sub-container">
-          {/* <img
-            className="whyHireMe__logo"
-            src={hardWorking}
-            alt="Hard Working"
-          /> */}
           <TimeOutline color={'#ffffff'} height="70px" width="70px"/>
           <div className="whyHireMe__text-container">
             <h3 className="whyHireMe__section-title">I work hard</h3>
@@ -30,7 +25,6 @@ function WhyHireMe(props) {
         </div>
 
         <div className="whyHireMe__sub-container">
-          {/* <img className="whyHireMe__logo" src={teamPlayer} alt="Team Player" /> */}
           <PeopleOutline color={'#ffffff'} height="70px" width="70px"/>
           <div className="whyHireMe__text-container">
             <h3 className="whyHireMe__section-title">I work well on teams</h3>
@@ -46,11 +40,6 @@ function WhyHireMe(props) {
         </div>
 
         <div className="whyHireMe__sub-container">
-          {/* <img
-            className="whyHireMe__logo"
-            src={fullStack}
-            alt="A Full Stack Developer"
-          /> */}
           <TerminalOutline color={'#ffffff'} height="70px" width="70px"/>
           <div className="whyHireMe__text-container">
             <h3 className="whyHireMe__section-title">

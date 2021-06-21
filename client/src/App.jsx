@@ -1,20 +1,28 @@
 import NavBar from "./Components/NavBar/NavBar";
-import HeroSection from "./Components/HeroSection/HeroSection";
-import AboutSection from "./Components/AboutSection/AboutSection";
-import WhyHireMe from "./Components/WhyHireMe/WhyHireMe";
-import ProjectsSection from "./Components/ProjectsSection/ProjectsSection";
-import Contact from "./Components/Contact/Contact";
 import "./App.scss";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import MainPage from "./MainPage";
 
 function App() {
+
+  document.title="Welcome to my site!"
+
   return (
     <div className="App">
-      <NavBar/>
-      <HeroSection/>
-      <AboutSection/>
-      <WhyHireMe/>
-      <ProjectsSection/>
-      <Contact/>
+      <Router>
+        <NavBar />
+        <Route
+          path="/"
+          render={(routeProps) => {
+            return <MainPage {...routeProps} />;
+          }}
+        />
+      </Router>
     </div>
   );
 }

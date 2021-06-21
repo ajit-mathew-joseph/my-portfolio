@@ -28,12 +28,12 @@
     &__image {
         width: 215px;
         border-radius: 50%;
-        height: 200px;
+        height: 180px;
         margin: 0% 0% 8%;
 
         @include desktop {
             width: 260px;
-            height: 240px;
+            height: 225px;
         }
     }
 
