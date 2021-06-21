@@ -22,9 +22,9 @@ class NavBar extends Component {
     return (
       <div className="header-container">
         <div className="header-mobile">
-          <Link to="/">
+          <HashLink to="/#my_hero">
             <img src={Logo} className="header-mobile__logo" alt="site logo" />
-          </Link>
+          </HashLink>
           <Menu
             right
             noOverlay
@@ -57,9 +57,9 @@ class NavBar extends Component {
         </div>
 
         <div className="header-desktop">
-          <Link to="/">
+          <HashLink to="/#my_hero">
             <img src={Logo} className="header-desktop__logo" alt="site logo" />
-          </Link>
+          </HashLink>
 
           <div className="header-desktop__container">
             <ul className="header-desktop__list">

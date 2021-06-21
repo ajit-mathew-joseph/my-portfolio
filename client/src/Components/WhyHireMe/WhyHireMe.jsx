@@ -49,7 +49,7 @@ function WhyHireMe(props) {
               React, Node, MongoDB, and Express are just some of the skills I
               would bring to the table.
             </p>
-            <p className="whyHireMe__description--two">
+            <p className="whyHireMe__description--two" id="my_projects">
               I have previously worked with Python and MySQL as well, and these
               skills would enable me to work on the front and back-end.
             </p>
